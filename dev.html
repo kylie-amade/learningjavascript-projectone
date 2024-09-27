@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lessons</title>
+</head>
+<body>
+    <h1>Cart Quantity</h1>
+    <div>
+        <button class="cart">Show Quantity</button>
+        <button class="cart-to">Add to Cart</button>
+        <button class="cart-inc">+2</button>
+        <button class="cart-add">+3</button>
+        <button class="cart-reset">Reset Cart</button>
+    </div>
+    <div class="quantity-display">Current Quantity: 0</div>
+    <script>
+        let cartQuantity = 0;
+       document.querySelector(".cart-to").addEventListener("click",function(){
+        cartQuantity++;
+        updateQuantityDisplay();
+       });
+        document.querySelector(".cart-inc").addEventListener("click",function(){
+        cartQuantity += 2;
+        updateQuantityDisplay();
+       });
+        document.querySelector(".cart-add").addEventListener("click",function(){
+        cartQuantity += 3;
+        updateQuantityDisplay();
+       });
+        document.querySelector(".cart-reset").addEventListener("click",function(){
+        cartQuantity = 0;
+        updateQuantityDisplay();
+       });
+           document.querySelector(".cart").addEventListener("click", function() {
+            alert("Current Cart Quantity: " + cartQuantity);
+        })
+        function updateQuantityDisplay(){
+            document.querySelector("quantity-display").textContent = "Current Quantity:" + cartQuantity;
+        }
+       
+    </script>
+</body>
+</html>

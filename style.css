@@ -116,3 +116,79 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+
+.whole-page{
+  max-width: 800px;
+  background-color: #eee;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+.show-modal{
+  background-color: transparent;
+  color: rgb(234, 0, 255);
+  border-radius: 10px;
+  border: 1px solid rgb(234, 0, 255);
+  width: 120px;
+  margin: 5px 5px;
+  padding: 5px;
+  box-shadow: 0 14px 28px rgba(43, 41, 41, 0.25) 0 10px 10px rgba(0,0,0,0.22);
+  transition: .4s;
+  font-size: 1.6em;
+}
+
+.modal{
+  width: 400px;
+  font-size: 1.3em;
+  color:#222;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid rgb(234, 0, 255);
+  padding:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+.hidden{
+  display:none;
+}
+
+.close-modal{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 350px;
+  border: none;
+
+}
+.show-modal:hover{
+ cursor: pointer;
+  background-color:  rgb(234, 0, 255);
+  color: #eee;
+  border: 1px solid rgb(234, 0, 255);
+  transform:translate(0px, 8px);
+}
+.title{
+  text-transform: capitalize;
+  padding: 10px;
+  font-weight: bold;
+
+}
+.next{
+  cursor: pointer;
+  background-color:  rgb(234, 0, 255);
+  color: #eee;
+  border: 1px solid rgb(234, 0, 255);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+
+}
+a{
+  text-decoration: none;
+  color:#eee;
+  
+}
