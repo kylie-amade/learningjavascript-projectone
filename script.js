@@ -17,7 +17,9 @@ document.querySelector(".paper").addEventListener("click", () => {
 document.querySelector(".scissors").addEventListener("click", () => {
   playGame("scissors");
 });
-document.querySelector(".reset").addEventListener("click", resetGame);
+document.querySelector(".reset").addEventListener("click", ()=>{
+  resetGame();
+});
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();

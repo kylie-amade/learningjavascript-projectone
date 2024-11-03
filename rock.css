@@ -1,0 +1,26 @@
+.whole{
+    max-width: 800px;
+    background-color: rgb(248, 244, 238);
+    margin: 0 auto;
+    padding:20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.rock,.paper,.scissors{
+    font-size: 100px;
+    border-radius: 120px;
+    background-color: rgb(222, 230, 228);
+    border: 2px solid rgb(247, 235, 250) ;
+    transition:.4s ;
+}
+.rock,.paper,.scissors:hover{
+    transform:translate(0px 8px);
+    cursor: pointer;
+}
